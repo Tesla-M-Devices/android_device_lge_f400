@@ -25,8 +25,15 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/f400/bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_f400_defconfig
+TARGET_KERNEL_CONFIG := coocoo_f400_defconfig
 TARGET_REQUIRES_BUMP := true
+
+# Kernel Toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
+
+# Rom Toolchain
+ TARGET_GCC_VERSION_EXP := 4.9
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
