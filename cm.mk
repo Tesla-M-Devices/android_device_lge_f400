@@ -1,6 +1,6 @@
 $(call inherit-product, device/lge/f400/full_f400.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_f400
